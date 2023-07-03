@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.foot-menu {
+  position: relative;
+  padding: 30px 0;
+}
+
+.foot-menu .foot-gnb {
+  width: 95%;
+  margin: 20px auto;
+  background-color: #00f;
+}
+
+.foot-menu .foot-gnb .btn {
+  background-color: #ddd;
+  text-align: left;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  width: 100%;
+  padding: 20px 10px;
+  font-size: 17px;
+}
+
+.foot-menu .foot-gnb button::before {
+  content: "\00276F";
+  width: 10px;
+  float: right;
+  margin-right: 10px;
+  font-weight: bold;
+  transform: rotate(90deg);
+}
+
+.foot-menu .foot-gnb .active,
+.foot-menu .foot-gnb .btn:hover {
+  background-color: #bbb;
+  cursor: pointer;
+}
+
+.foot-menu .foot-gnb .active::before {
+  content: "\00276F";
+  transform: rotate(0);
+}
+
+.foot-menu .foot-gnb .panel {
+  height: 0;
+  padding: 0 10px;
+  font-size: 15px;
+  overflow: hidden;
+  background-color: #ffc774;
+  transition: height 300ms ease-out;
+}

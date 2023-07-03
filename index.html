@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IKEA</title>
+
+  <link rel="stylesheet" href="./css/reset.css">
+
+  <!-- lodash : 스크롤을 제어 할 수 있는 라이브러리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- scrollMagic : 스크롤에 따라 해당 영역 감지 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+
+  <!-- ghap : 자바스크립트 애니메이션 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- topButton : scrollTopPlugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js" integrity="sha512-agNfXmEo6F+qcj3WGryaRvl9X9wLMQORbTt5ACS9YVqzKDMzhRxY+xjgO45HCLm61OwHWR1Oblp4QSw/SGh9SA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- 탑버튼 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- 아이콘 이미지 -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!-- Swiper slider : 터치되는 슬라이드 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <script defer src="./js/jquery.min.js"></script>
+  <script defer src="./js/foot-menu.js"></script>
+
+  
+  <script defer src="./js/main.js"></script>
+</head>
+<body>
+  <header id="stichy-menu">
+    <div class="header-icon">
+      <h1><a href="./index.html"><img src="images/logo.png" alt="logo"></a></h1>
+      <div class="header-right">
+        <div class="header-right-menu">
+          <ul>
+            <li>모든제품</li>
+            <li>공간별 쇼핑하기</li>
+            <li>특별한 가격</li>
+            <li>홈 액세서리</li>
+            <li>서비스(AS)</li>
+          </ul>
+        </div>
+        <div class="search-icon-area">
+          <div class="search">
+            <input type="text" >
+            <span class="material-icons">search</span>
+          </div>
+          <div class="icon-img">
+            <img src="./images/icon1.png" alt="icno1">
+            <img src="./images/icon2.png" alt="icno2">
+            <img src="./images/icon3.png" alt="icno3">
+            <img src="./images/icon4.png" alt="icno4">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--swiper slide 영역 -->
+  <section class="swiper-slide">
+    <h2>시즌별 핫한 상품</h2>
+    <div class="promotion">
+      <div class="swiper promotion-slide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/swiper-slide1.png" alt="swiper-slide1">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/swiper-slide2.png" alt="swiper-slide2">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/swiper-slide3.png" alt="swiper-slide3">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/swiper-slide4.png" alt="swiper-slide4">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/swiper-slide5.png" alt="swiper-slide5"> 
+          </div>
+        </div>
+        <div class="swiper-prev">
+          <span class="material-icons">
+            arrow_back
+          </span>
+        </div>
+        <div class="swiper-next">
+          <span class="material-icons">
+            arrow_forward
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Section1 Area -->
+  <section class="section1">
+    <h2>추천제품</h2>
+    <div>
+      <ul>
+        <li><img src="./images/section_hover_tab1-1.png" alt="section1-img"></li>
+        <li><img src="./images/section_hover_tab1-2.png" alt="section1-img"></li>
+        <li><img src="./images/section_hover_tab1-3.png" alt="section1-img"></li>
+    </div>
+  </section>
+
+  <!-- Pc-Section1 -->
+  <section class="pc-section1">
+    <h2>추천제품</h2>
+    <div>
+      <ul>
+        <li><img src="./images/section1-1.png" alt="section1-img"></li>
+        <li><img src="./images/section1-2.png" alt="section1-img"></li>
+        <li><img src="./images/section1-3.png" alt="section1-img"></li>
+        <li><img src="./images/section1-4.png" alt="section1-img"></li>
+        <li><img src="./images/section1-5.png" alt="section1-img"></li>
+        <li><img src="./images/section1-6.png" alt="section1-img"></li>
+        <li><img src="./images/section_hover1-1.png" alt="hover-img" class="pc-section1-hover1"></li>
+        <li><img src="./images/section_hover1-2.png" alt="hover-img" class="pc-section1-hover2"></li>
+        <li><img src="./images/section_hover1-3.png" alt="hover-img" class="pc-section1-hover3"></li>
+        <li><img src="./images/section_hover1-4.png" alt="hover-img" class="pc-section1-hover4"></li>
+        <li><img src="./images/section_hover1-5.png" alt="hover-img" class="pc-section1-hover5"></li>
+        <li><img src="./images/section_hover1-6.png" alt="hover-img" class="pc-section1-hover6"></li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- sticky menu area -->
+  <div class="sticky-menu">
+    <nav>
+      <ul class="tab-btn">
+        <li class="tab-btn-size1"><img src="./images/sticky1-img.png" alt="stiky-menu"><a href="#tab1" class="btn active1">지금핫한</a></li>
+        <li class="tab-btn-size2"><a href="#tab2" class="btn active2">침실</a></li>
+        <li class="tab-btn-size3"><a href="#tab3" class="btn active3">거실</a></li>
+        <li class="tab-btn-size4"><a href="#tab4" class="btn active4">주방</a></li>
+        <li class="tab-btn-size5"><a href="#tab2" class="btn active2 active5">홈오피스</a></li>
+        <li class="tab-btn-size6"><a href="#tab3" class="btn active3">야외</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <!-- section3 / 지금핫한 Area -->
+  <section class="section3 tab-cont active">
+    <div id="tab1"></div>
+    <h2>지금 핫한</h2>
+    <nav>
+      <ul>
+        <li><img src="./images/section3-1.png" alt="section3-img"></li>
+        <li><img src="./images/section3-2.png" alt="section3-img"></li>
+        <li><img src="./images/section3-3.png" alt="section3-img"></li>
+        <li><img src="./images/section3-4.png" alt="section3-img"></li>
+        <li><img src="./images/section3-5.png" alt="section3-img"></li>
+        <li><img src="./images/section3-6.png" alt="section3-img"></li>
+        <li><img src="./images/section3-7.png" alt="section3-img"></li>
+        <li><img src="./images/section3-8.png" alt="section3-img"></li>
+        <li><img src="./images/section_hover3-1.png" alt="section3-img-hover" class="section3-hover section3-hover1"></li>
+        <li><img src="./images/section_hover3-2.png" alt="section3-img-hover" class="section3-hover section3-hover2"></li>
+        <li><img src="./images/section_hover3-3.png" alt="section3-img-hover" class="section3-hover section3-hover3"></li>
+        <li><img src="./images/section_hover3-4.png" alt="section3-img-hover" class="section3-hover section3-hover4"></li>
+        <li><img src="./images/section_hover3-5.png" alt="section3-img-hover" class="section3-hover section3-hover5"></li>
+        <li><img src="./images/section_hover3-6.png" alt="section3-img-hover" class="section3-hover section3-hover6"></li>
+        <li><img src="./images/section_hover3-7.png" alt="section3-img-hover" class="section3-hover section3-hover7"></li>
+        <li><img src="./images/section_hover3-8.png" alt="section3-img-hover" class="section3-hover section3-hover8"></li>
+      </ul>
+    </nav>
+  </section>
+
+  <!-- section4 / 더보기 영역 -->
+  <section class="tab-section">
+    <div id="tab2"></div>
+    <section class="more-section tab-cont">
+      <h2>침실</h2>
+      <div class="more-wrap">
+        <div><img src="./images/section_bedroom4-1.png" alt="bedroom"></div>
+        <div><img src="./images/section_bedroom4-2.png" alt="bedroom"></div>
+        <div class="mo-hide"><img src="./images/section_bedroom4-3.png" alt="bedroom"></div>
+        <div class="mo-hide"><img src="./images/section_bedroom4-4.png" alt="bedroom"></div>
+        <div class="hide"><img src="./images/section_bedroom4-5.png" alt="bedroom"></div>
+        <div class="hide"><img src="./images/section_bedroom4-6.png" alt="bedroom"></div>
+        <div class="hide"><img src="./images/section_bedroom4-7.png" alt="bedroom"></div>
+        <div class="hide"><img src="./images/section_bedroom4-8.png" alt="bedroom"></div>
+        <div class="hide"><img src="./images/section_bedroom4-9.png" alt="bedroom"></div>
+        <div class="hide"><img src="./images/section_bedroom4-10.png" alt="bedroom"></div>
+        <div class="hide"><img src="./images/section_bedroom4-11.png" alt="bedroom"></div>
+        <div class="hide"><img src="./images/section_bedroom4-12.png" alt="bedroom"></div>
+      </div>
+      
+      <button id="moreBtn" onclick="showMore()">더보기</button>
+    </section>
+  </section>
+
+
+  <!-- section5 / 다양한 IKEA영역 -->
+  <section class="section5">
+    <h2>다양한 IKEA</h2>
+    <ul>
+      <li><img src="./images/section5-1.png" alt="section5-img"></li>
+      <li><img src="./images/section5-2.png" alt="section5-img"></li>
+    </ul>
+    <p class="living-loom">Living Loom</p>
+    <p class="home-office">Home Office</p>
+  </section>
+
+  <!-- section6 / 서비스 아이콘 영역 -->
+  <section class="section6">
+    <h2 class="hidden">section6 icon</h2>
+    <ul>
+      <li><img src="./images/section6-1.png" alt="section-icon-img"></li>
+      <li><img src="./images/section6-2.png" alt="section-icon-img"></li>
+      <li><img src="./images/section6-3.png" alt="section-icon-img"></li>
+      <li><img src="./images/section6-4.png" alt="section-icon-img"></li>
+    </ul>
+  </section>
+
+
+  <!-- 푸터 영역 -->
+  <footer class="mo-footer">
+    <div class="foot-menu">
+      <div class="foot-gnb">
+        <button class="btn">고객문의</button>
+        <ul class="panel">
+          <li>고객지원</li>
+          <li>자주 묻는 질문</li>
+          <li>문의하기</li>
+          <li>배송조회</li>
+          <li>교환환불</li>
+          <li>품질보증</li>
+          <li>제품리콜</li>
+          <li>피드백</li>
+          <li>부품신청</li>
+        </ul>
+      </div>
+      <div class="foot-gnb">
+        <button class="btn">쇼핑하기</button>
+        <ul class="panel">
+          <li>쇼핑하기</li>
+          <li>헤이오더</li>
+          <li>IKEA for Business</li>
+          <li>셀프 플래닝</li>
+          <li>IKEA 모바일 앱</li>
+          <li>제품 사용 팁/가이드</li>
+          <li>제품 구매 가이드</li>
+          <li>브로슈어</li>
+          <li>결제 옵션</li>
+          <li>기프트 카드</li>
+        </ul>
+      </div>
+      <div class="foot-gnb">
+        <button class="btn">서비스</button>
+        <ul class="panel">
+          <li>IKEA 서비스</li>
+          <li>배송 서비스</li>
+          <li>조립 서비스</li>
+          <li>설치 서비스</li>
+          <li>주방 서비스</li>
+          <li>구매 상담 서비스</li>
+          <li>인테리어 디자인 서비스</li>
+          <li>바이백 서비스</li>
+        </ul>
+      </div>
+      <div class="foot-gnb">
+        <button class="btn">IKEA 이야기</button>
+        <ul class="panel">
+          <li>브랜드 소개</li>
+          <li>집에서의 생활</li>
+          <li>지속가능한 생활</li>
+          <li>내가 아끼는집, 나를 아끼는집</li>
+          <li>뉴스룸</li>
+          <li>채용정보</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="foot-show">
+      <h2 class="hidden">푸터 나라, 언어 설정</h2>
+      <img src="./images/foot-country.png" alt="국가">
+      <img src="./images/foot-language.png" alt="언어">
+    </section>
+    
+    <section class="foot-icon">
+      <h2 class="hidden">푸터 아이콘</h2>
+      <img src="./images/foot-icon.png" alt="foot-icon">
+    </section>
+
+    <hr>
+
+    <section class="foot-add">
+      <div class="address-area">
+        <address>ⓒInter IKEA Systems B.V 1999-2023</address>
+        <p>IKEA코리아</p>
+        <p>주소 : (우) 14352 경기도 광명시 일직로 17 IKEA광명점</p>
+        <p>사업자 등록번호 : 106-86-82871 사업자정보확인</p>
+        <p>대표자 : 프레드릭 요한손</p>
+        <p>통신판매업 신고 : 2018-경기광명-0209</p>
+        <p>TEL : 1670-4532</p>
+      </div>
+
+      <div class="foot-hide">
+        <ul>
+          <li>개인정보처리방침</li>
+          <li>쿠키 정책</li>
+          <li>쿠키 설정</li>
+          <li>웹사이트 이용 약관</li>
+          <li>Responsible disclosure</li>
+        </ul>
+      </div>
+    </section>
+  </footer>
+
+
+  <!-- pc-footer 영역 -->
+  <footer class="pc-footer">
+    <div class="pc-foot-menu">
+      <div class="pc-foot-family">
+        <img src="./images/foot-family.png" alt="family">
+        <img src="./images/foot-business.png" alt="business">
+      </div>
+      <div class="pc-foot-gnb">
+        <h4>고객문의</h4>
+        <ul class="pc-panel">
+          <li>고객지원</li>
+          <li>자주 묻는 질문</li>
+          <li>문의하기</li>
+          <li>배송조회</li>
+          <li>교환환불</li>
+          <li>품질보증</li>
+          <li>제품리콜</li>
+          <li>피드백</li>
+          <li>부품신청</li>
+        </ul>
+      </div>
+      <div class="pc-foot-gnb">
+        <h4>쇼핑하기</h4>
+        <ul class="pc-panel">
+          <li>쇼핑하기</li>
+          <li>헤이오더</li>
+          <li>IKEA for Business</li>
+          <li>셀프 플래닝</li>
+          <li>IKEA 모바일 앱</li>
+          <li>제품 사용 팁/가이드</li>
+          <li>제품 구매 가이드</li>
+          <li>브로슈어</li>
+          <li>결제 옵션</li>
+          <li>기프트 카드</li>
+        </ul>
+      </div>
+      <div class="pc-foot-gnb">
+        <h4>서비스</h4>
+        <ul class="pc-panel">
+          <li>IKEA 서비스</li>
+          <li>배송 서비스</li>
+          <li>조립 서비스</li>
+          <li>설치 서비스</li>
+          <li>주방 서비스</li>
+          <li>구매 상담 서비스</li>
+          <li>인테리어 디자인 서비스</li>
+          <li>바이백 서비스</li>
+        </ul>
+      </div>
+      <div class="pc-foot-gnb">
+        <h4>IKEA 이야기</h4>
+        <ul class="pc-panel">
+          <li>브랜드 소개</li>
+          <li>집에서의 생활</li>
+          <li>지속가능한 생활</li>
+          <li>내가 아끼는집, 나를 아끼는집</li>
+          <li>뉴스룸</li>
+          <li>채용정보</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="pc-show-icon">
+      <section class="pc-foot-icon">
+        <h2 class="hidden">푸터 아이콘</h2>
+        <img src="./images/foot-icon.png" alt="foot-icon">
+      </section>
+
+      <section class="pc-foot-show">
+        <h2 class="hidden">푸터 나라, 언어 설정</h2>
+        <img src="./images/foot-country.png" alt="국가">
+        <img src="./images/foot-language.png" alt="언어">
+      </section>
+    </section>
+
+    <hr>
+
+    <section class="pc-foot-add">
+      <div class="pc-address-area">
+        <address>ⓒInter IKEA Systems B.V 1999-2023</address>
+        <p>IKEA코리아</p>
+        <p>주소 : (우) 14352 경기도 광명시 일직로 17 IKEA광명점</p>
+        <p>사업자 등록번호 : 106-86-82871 사업자정보확인</p>
+        <p>대표자 : 프레드릭 요한손</p>
+        <p>통신판매업 신고 : 2018-경기광명-0209</p>
+        <p>TEL : 1670-4532</p>
+      </div>
+
+      <div class="pc-foot-hide">
+        <ul>
+          <li>개인정보처리방침</li>
+          <li>쿠키 정책</li>
+          <li>쿠키 설정</li>
+          <li>웹사이트 이용 약관</li>
+          <li>Responsible disclosure</li>
+        </ul>
+      </div>
+    </section>
+  </footer>
+
+    <!-- TOP BUTTON(탑버튼) -->
+    <div id="to-top">
+      <span class="material-symbols-outlined material-icons">
+        arrow_upward
+        </span>
+    </div>
+
+</body>
+</html>
